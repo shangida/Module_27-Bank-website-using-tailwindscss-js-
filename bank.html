@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- tailwindcss cdn link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <header>
+        <h1 class="text-4xl text-center my-10">Let's get some <span class="text-blue-600 font-semibold">Mooney </span>!!!!!</h1>
+    </header>
+    <main>
+        <section>
+            <div class="grid grid-cols-3">
+                <div class="bg-cyan-400 w-9/12 mx-auto text-white p-8">
+                    <h4 class="text-3xl">Deposit</h4>
+                    <h4 class="text-5xl">$<span id="deposit_amount">00</span></h4>
+                </div>
+                <div class="bg-pink-300 w-9/12 mx-auto text-white p-8">
+                    <h4 class="text-3xl">Withdraw</h4>
+                    <h4 class="text-5xl">$<span id="witthdraw_amount">00</span></h4>
+                </div>
+                <div class="bg-purple-500 w-9/12 mx-auto text-white p-8">
+                    <h4 class="text-3xl">Balance</h4>
+                    <h4 class="text-5xl">$<span id="total_balance">1240</span></h4>
+                </div>
+            </div>
+        </section>
+        <div class="grid grid-cols-2 my-12">
+            <div class="bg-cyan-400 w-9/12 mx-auto p-8">
+                <h4 class="text-3xl text-white">Pleaes Deposit</h4>
+                <div class="px-4">
+                    <input class="w-4/5 my-2 px-3 block rounded-lg" type="text" id="deposit_filed" placeholder="$ Amount you want to Deposit">
+                    <button id="deposit_btn" class="bg-violet-800 py-2 px-8 text-white font-medium rounded-lg hover:bg-sky-900">Deposit</button>
+                </div>
+            </div>
+            <div class="bg-pink-300 w-9/12 mx-auto p-8">
+                <h4 class="text-3xl text-white">Pleaces Whithdraw</h4>
+                <div class="px-4">
+                    <input class="w-4/5 my-2 px-3 block rounded-lg" type="text" id="withdraw_flied" placeholder="$ Amount you want to Withdraw">
+                    <button id="withdraw_btn" class="bg-violet-800 py-2 px-8 text-white font-medium rounded-lg hover:bg-sky-900">Withdraw</button>
+                </div>
+            </div>
+        <section>
+
+        </section>
+    </main>
+
+    <script src="./js/bank.js"></script>
+</body>
+</html>
